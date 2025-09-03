@@ -3,9 +3,10 @@
   --bgColor1: lightgray;
   --borderColor: rgb(196, 196, 247);
   --font: "Poppins";
-  --headerFontSize: 16px;
-  --textFontSize: 12px;
+  --headerFontSize: 1.5rem;
+  --textFontSize: 1rem;
   --boxShadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 }
 
 * {
@@ -78,6 +79,7 @@ h2 {
 }
 p {
   text-align: justify;
+  font-size: var(--textFontSize);
 }
 
 /* media Queries */

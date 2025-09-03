@@ -48,11 +48,10 @@ main {
   box-shadow: var(--boxShadow);
 }
 .bio #myself {
-  height: 150px;
   margin: auto;
   display: grid;
   align-items: center;
-  line-height: 20px;
+  line-height: 25px;
   padding: 20px;
   box-shadow: var(--boxShadow);
 }
@@ -67,7 +66,7 @@ main {
 .hobbies ul {
   margin: 0px;
   padding: 0px;
-  line-height: 20px;
+  line-height: 25px;
 }
 .aspirations {
   padding: 20px;
@@ -76,6 +75,7 @@ main {
 }
 h2 {
   font-size: var(--headerFontSize);
+  margin-bottom: 10px;
 }
 p {
   text-align: justify;

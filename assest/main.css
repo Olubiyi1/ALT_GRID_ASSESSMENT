@@ -1,0 +1,139 @@
+:root {
+  --fontColor: blue;
+  --bgColor1: lightgray;
+  --borderColor: rgb(196, 196, 247);
+  --font: "Poppins";
+  --headerFontSize: 16px;
+  --textFontSize: 12px;
+  --boxShadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--font);
+}
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 10px;
+  margin: 10px;
+}
+
+.bio,
+.hobbies,
+.aspirations {
+  border-radius: 10px;
+}
+.bio {
+  grid-column: span 4;
+  background-color: var(--bgColor1);
+  box-shadow: var(--boxShadow);
+  align-content: center;
+}
+.bioWrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 800px;
+  margin: 0px auto;
+  padding: 10px;
+}
+.bio #profilePic img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: var(--boxShadow);
+}
+.bio #myself {
+  height: 150px;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  line-height: 20px;
+  padding: 20px;
+  box-shadow: var(--boxShadow);
+}
+
+.hobbies {
+  grid-column: span 2;
+  padding: 20px;
+  box-shadow: var(--boxShadow);
+  margin-right: 5px;
+}
+
+.hobbies ul {
+  margin: 0px;
+  padding: 0px;
+  line-height: 20px;
+}
+.aspirations {
+  padding: 20px;
+  grid-column: span 2;
+  box-shadow: var(--boxShadow);
+}
+h2 {
+  font-size: var(--headerFontSize);
+}
+p {
+  text-align: justify;
+}
+
+/* media Queries */
+@media screen and (max-width: 890px) {
+  main {
+    display: block;
+    height: fit-content;
+  }
+  .bioWrap {
+    display: block;
+    width: 600px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .aspirations {
+    background-color: var(--bgColor1);
+    margin: 10px 0px;
+  }
+
+  .hobbies {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .bioWrap {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .bioWrap {
+    width: 350px;
+  }
+  .bioWrap #profilePic img {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width:380px) {
+    main{
+        font-size: 14px;
+    }
+    .bioWrap{
+        width: 250px;
+    }
+    
+    .bioWrap p{
+        font-size: 14px;
+    }
+    .bioWrap #myself{
+        width: fit-content;
+        padding: 5px;
+    }
+}
+
+
